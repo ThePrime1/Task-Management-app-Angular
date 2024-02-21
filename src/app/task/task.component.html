@@ -1,0 +1,21 @@
+<div
+  class="container"
+  [ngClass]="
+    task.priority === 'High'
+      ? 'high'
+      : task.priority === 'Medium'
+      ? 'medium'
+      : 'low'
+  "
+>
+  <p-card
+    header="{{ task.title }}"
+    subheader="Assigned To: {{ task.assignedTo }}"
+    [style]="{ padding: '30px' }"
+  >
+    <p>Description: {{ task.description }}</p>
+    <p>Priority: {{ task.priority }}</p>
+    <p>Status: {{ task.status }}</p>
+    <p>Start Date: {{ task.startDate }}</p>
+  </p-card>
+</div>

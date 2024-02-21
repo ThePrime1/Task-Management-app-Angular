@@ -1,0 +1,40 @@
+{
+  "tasks": [
+    {
+      "id": "1",
+      "title": "Buy a pc",
+      "description": "Go to multiplan center and buy a new pc",
+      "startDate": "01/05/2024",
+      "assignedTo": "Mitul",
+      "status": "in progress",
+      "priority": "High"
+    },
+    {
+      "id": "1708176840858",
+      "title": "Learn Nestjs",
+      "description": "Nestjs is a nodejs progressive framwork.",
+      "startDate": "2024-02-22T18:00:00.000Z",
+      "assignedTo": "gg",
+      "status": "open",
+      "priority": "low"
+    },
+    {
+      "id": "1708277930366",
+      "title": "Learn angular",
+      "description": "In this example, getTasks() is a method in the TaskService that retrieves tasks asynchronously. The task count is updated based on the length of the array of tasks fetched from the service. Make sure your implementation aligns with your application's requirements and architecture.",
+      "startDate": "2024-02-22T18:00:00.000Z",
+      "assignedTo": "Mitul",
+      "status": "completed",
+      "priority": "medium"
+    },
+    {
+      "id": "1708282319918",
+      "title": "yy",
+      "description": "what",
+      "startDate": "2024-02-22T18:00:00.000Z",
+      "assignedTo": "mitul",
+      "status": "in progress",
+      "priority": "medium"
+    }
+  ]
+}

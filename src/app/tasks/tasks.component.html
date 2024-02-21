@@ -1,0 +1,61 @@
+<div class="container">
+  <app-task-counter></app-task-counter>
+  <button class="btn" (click)="showDialog()">Create Task</button>
+  <!-- Modal -->
+  <p-dialog
+    [(visible)]="visible"
+    [modal]="true"
+    [style]="{ width: '50vw' }"
+    [draggable]="true"
+    [resizable]="false"
+  >
+    <!-- Form -->
+    <app-task-form
+      (closeForm)="closeForm($event)"
+      (formData)="createTask($event)"
+      [isEditable]="isEditable"
+      [task]="selectedTask"
+    ></app-task-form>
+    <!-- Form -->
+  </p-dialog>
+  <!-- Modal -->
+
+  <hr />
+  <!-- Card -->
+  <div class="content" style="margin-top: 30px">
+    <p-card
+      header="{{ task.title }}"
+      subheader="Assigned To: {{ task.assignedTo }}"
+      [style]="{ width: '320px', padding: '10px' }"
+      *ngFor="let task of tasks"
+    >
+      <p>Date:{{ task.startDate | date }}</p>
+      <p>Priority: {{ task.priority }}</p>
+      <p>Status: {{ task.status }}</p>
+      <ng-template pTemplate="footer">
+        <button
+          pTooltip="Delete Task"
+          tooltipPosition="bottom"
+          (click)="deleteTask(task.id)"
+        >
+          <i class="pi pi-trash"></i>
+        </button>
+        <button
+          pTooltip="Edit Task"
+          tooltipPosition="bottom"
+          (click)="updateTask(task.id)"
+        >
+          <i class="pi pi-file-edit"></i>
+        </button>
+        <button
+          pTooltip="See Details"
+          tooltipPosition="bottom"
+          (click)="getTask(task.id)"
+        >
+          <i class="pi pi-exclamation-circle"></i>
+        </button>
+      </ng-template>
+    </p-card>
+  </div>
+  <!-- Card -->
+</div>

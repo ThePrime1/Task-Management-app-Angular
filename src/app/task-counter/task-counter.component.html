@@ -1,0 +1,35 @@
+<!-- {{ totalTasks }}
+{{ openedTasks }}
+{{ inProgress }}
+{{ canceledTasks }}
+{{ completedTasks }} -->
+<div class="container">
+  <p-card [style]="{ width: '170px', padding: '5px' }">
+    <p class="m-0">
+      Number of Tasks: <span style="font-weight: bold">{{ totalTasks }}</span>
+    </p>
+  </p-card>
+  <p-card [style]="{ width: '170px', padding: '5px' }">
+    <p class="m-0">
+      Opened Tasks: <span style="font-weight: bold">{{ openedTasks }}</span>
+    </p>
+  </p-card>
+  <p-card [style]="{ width: '170px', padding: '5px' }">
+    <p class="m-0">
+      In Progress: <span style="font-weight: bold">{{ inProgress }}</span>
+    </p>
+  </p-card>
+  <p-card [style]="{ width: '170px', padding: '5px' }">
+    <p class="m-0">
+      Completed Tasks:
+      <span style="font-weight: bold">{{ completedTasks }}</span>
+    </p>
+  </p-card>
+  <p-card [style]="{ width: '170px', padding: '5px' }">
+    <p class="m-0">
+      Canceled Tasks: <span style="font-weight: bold">{{ canceledTasks }}</span>
+    </p>
+  </p-card>
+</div>
+
+{{ something }}

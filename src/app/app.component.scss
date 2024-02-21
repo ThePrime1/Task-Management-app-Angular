@@ -1,0 +1,49 @@
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  padding: 1.2rem 1.8rem;
+
+  h1{
+    font-weight: bold;
+
+    span{
+      color: red;
+    }
+  }
+
+  ul{
+    display: flex;
+
+    li{
+      list-style-type: none;
+
+      a{
+        color: white;
+        text-decoration: none;
+        padding: 0 1.2rem;
+      }
+      a:hover{
+        color: red;
+      }
+    }
+  }
+}
+.active{
+  border-bottom: 3px solid red;
+
+}
+
+footer{
+  background-color: black;
+  padding: 1.5rem 1.8rem;
+  color: white;
+  text-align: center;
+
+  span{
+    color: red;
+    font-weight: bold;
+  }
+}
